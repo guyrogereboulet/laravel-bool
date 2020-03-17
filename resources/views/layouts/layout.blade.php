@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>laravel-boolean</title>
-  </head>
-  <body>
+     @include("layouts.partials._header")
+      {{-- header --}}
+      <header>
+        @yield("header")
 
-  </body>
-</html>
+      </header>
+      {{-- /header --}}
+
+      {{-- main --}}
+      <main>
+
+      </main>
+      {{-- /main --}}
+
+
+
+      {{-- footer --}}
+      <footer>
+
+      </footer>
+      {{-- /footer --}}
+
+      @include("layouts.partials._footer")

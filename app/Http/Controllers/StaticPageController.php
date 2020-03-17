@@ -9,7 +9,7 @@ class StaticPageController extends Controller
     //
     public function index()
     {
-
+      return view ("staticpages.index");
     }
 
     public function privacy()
