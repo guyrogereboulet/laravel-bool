@@ -1,1 +1,47 @@
 //
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 90px;
+  color: white;
+  background-color: blue;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .logo {
+    line-height: 90px;
+    height: 90px;
+    float: left;
+    padding-left: 10px;
+    img {
+      height: 50px;
+      margin-top: 20px;
+    }
+  }
+
+  ul {
+    float:right;
+    list-style: none;
+    text-align: right;
+    li {
+      display: inline-block;
+      margin: 0px 30px;
+      line-height: 90px;
+      a {
+        color: white;
+        text-decoration: none;
+        &.active {
+          color: red;
+        }
+      }
+    }
+  }
+
+
+}
