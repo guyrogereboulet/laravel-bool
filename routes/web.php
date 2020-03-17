@@ -26,4 +26,4 @@ Route::get('/domande-frequenti',"StaticPageController@faq")->name("static_page.f
 
 // *****STUDENTI*****
 Route::get('/students',"StudentiController@index")->name("student.index");
-Route::get('/students/show/{id}',"StudentiController@show")->name("student.index");
+Route::get('/students/show/{id}',"StudentiController@show")->name("student.show");
