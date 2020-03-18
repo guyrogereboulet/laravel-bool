@@ -49,3 +49,24 @@
   color: red;
 }
 
+.nav-footer {
+  background-color: grey;
+  height: 100px;
+}
+
+.nav-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav-footer ul {
+  list-style: none;
+  float: right;
+  text-align: right;
+}
+
+.nav-footer ul a {
+  color: black;
+}
+

@@ -1,4 +1,12 @@
 //
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 *{
   margin:0;
   padding:0;
@@ -9,11 +17,7 @@
   height: 90px;
   color: white;
   background-color: blue;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  @include clearfix;
   .logo {
     line-height: 90px;
     height: 90px;
@@ -44,4 +48,18 @@
   }
 
 
+}
+
+.nav-footer {
+  background-color: grey;
+  height: 100px;
+  @include clearfix;
+  ul {
+    list-style: none;
+    float:right;
+    text-align: right;
+    a {
+      color: black;
+    }
+  }
 }
