@@ -9,7 +9,7 @@ class StaticPageController extends Controller
     //
     public function index()
     {
-      $tudents = config('students.students');
+      $students = config('students.students');
       return view ("staticpages.index");
     }
 

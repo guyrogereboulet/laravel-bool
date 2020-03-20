@@ -7,10 +7,15 @@ use Illuminate\Http\Request;
 
 class studentController extends Controller
 {
-    //
-    public function eta($eta)
+    public function __construct()
     {
-      
+     $this->students = config("students.students");
+    }
+
+    public function all()
+    {
+     $students = $this->students;
+     return response()->json($students);
     }
 
 }

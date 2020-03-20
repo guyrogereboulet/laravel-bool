@@ -21,5 +21,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::namespace('Api')->group(function () {
-    Route::post('/students/eta/{eta}','StudentController@eta');
+    Route::post('/students','StudentController@all');
 });
