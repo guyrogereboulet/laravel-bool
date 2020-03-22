@@ -14,7 +14,7 @@ return [
     [
       "img" => "https://www.boolean.careers/images/students/poggini.png",
       "nome" => "Paola Poggini",
-      "eta" => "24",
+      "eta" => "25",
       "azienda" => "Prima Assicurazioni",
       "ruolo" => "junior software engineer",
       "descrizione" => "A 24 anni, dopo aver conseguito il diploma linguistico ha deciso di intraprendere fin da subito un percorso nel mondo Tech. Ad oggi ricopre il ruolo di Junior Software Engineer.",

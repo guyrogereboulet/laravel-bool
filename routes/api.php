@@ -19,7 +19,10 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-
+//Uso il metodo POST nelle API perché non voglio che l'utente veda i dati nel browser
 Route::namespace('Api')->group(function () {
     Route::post('/students','StudentController@all');
+    Route::post('/students/ages','StudentController@getAge');
+    Route::post('/students/ages/{eta}','StudentController@getForAge');
+    Route::post('/students/filter','StudentController@filter');
 });
